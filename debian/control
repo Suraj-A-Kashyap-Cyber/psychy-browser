@@ -1,0 +1,23 @@
+Source: psychy-browser
+Section: web
+Priority: optional
+Maintainer: Psychy <root@localhost>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-cargo,
+ libgtk-4-dev,
+ libadwaita-1-dev,
+ libwebkitgtk-6.0-dev,
+ libssl-dev,
+ libseccomp-dev,
+ pkg-config,
+ rustc,
+ cargo,
+Standards-Version: 4.6.2
+
+Package: psychy-browser
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends},
+ gtk4-bin, libadwaita-1-0, webkitgtk-6.0-4,
+ bubblewrap, tor
+Description: Anonymity-first browser (Tor always-on)

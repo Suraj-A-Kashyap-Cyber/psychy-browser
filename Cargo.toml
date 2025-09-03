@@ -1,0 +1,15 @@
+[workspace]
+members = [
+  "lib/psy-core",
+  "lib/psy-ui",
+  "bin/psychy-browser",
+  "bin/psy-netd",
+  "bin/psy-launcher",
+  "bin/psy-updater",
+]
+resolver = "2"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

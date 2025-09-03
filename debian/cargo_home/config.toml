@@ -1,0 +1,11 @@
+[source.crates-io]
+replace-with = "dh-cargo-registry"
+
+[source.dh-cargo-registry]
+directory = "/workspace/psychy/debian/cargo_registry"
+
+[build]
+rustflags = ['-C', 'debuginfo=2', '-C', 'strip=none', '--cap-lints', 'warn', '-C', 'linker=x86_64-linux-gnu-gcc', '-C', 'link-arg=-Wl,-z,relro', '--remap-path-prefix', '/workspace/psychy=/usr/share/cargo/registry/psychy-browser-0.1.0', '--remap-path-prefix', '/workspace/psychy/debian/cargo_registry=/usr/share/cargo/registry']
+
+[profile.release]
+debug = true

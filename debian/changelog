@@ -1,0 +1,5 @@
+psychy-browser (0.1.0-1) unstable; urgency=medium
+
+  * Initial release. Always-On Tor, Wayland-only build.
+
+ -- Psychy <root@localhost>  Fri, 22 Aug 2025 00:00:00 +0000

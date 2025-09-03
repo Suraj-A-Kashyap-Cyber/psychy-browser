@@ -1,0 +1,11 @@
+[package]
+name = "psy-ui"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+[dependencies]
+gtk4       = "0.10.0"
+libadwaita = "0.8"
+webkit2gtk = "2.0.1"
+gio        = "0.18"
+glib       = "0.18"
