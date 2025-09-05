@@ -1,0 +1,18 @@
+# Rust
+/target
+**/*.rlib
+**/*.rmeta
+
+# Dependencies
+/vendor
+
+# Output
+/dist
+*.deb
+
+# OS / Editors
+.DS_Store
+Thumbs.db
+
+# Node/Web (if applicable)
+node_modules
